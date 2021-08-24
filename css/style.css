@@ -150,14 +150,39 @@ ul {
 .contact-link:focus {
   color: var(--hover-color);
 }
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item::before {
+  content: '';
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-item:nth-child(1)::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../icon/mail.svg);
+}
+
+.contact-item:nth-child(2)::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../icon/smartphone.svg);
+}
 
 /* ---------HERO---------- */
 
 .hero {
+  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/backgroundhero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -233,6 +258,33 @@ ul {
   margin: 0 auto;
 }
 
+.feauters-item::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  display: inline-flex;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feauters-item:nth-child(1)::before {
+  background-image: url(../icon/antenna.svg);
+}
+
+.feauters-item:nth-child(2)::before {
+  background-image: url(../icon/clock.svg);
+}
+
+.feauters-item:nth-child(3)::before {
+  background-image: url(../icon/clock.svg);
+}
+
+.feauters-item:nth-child(4)::before {
+  background-image: url(../icon/astronaut.svg);
+}
+
 /* ----------KINDS OF WORK---------- */
 
 .kinds-work-title {
@@ -304,7 +356,51 @@ ul {
   color: var(--main-text-color);
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.our-team-contact-list {
+  display: flex;
+  margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.our-team-contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.our-team-contact-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.our-team-contact-item {
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.our-team-contact-item:nth-child(1) {
+  background-image: url(../icon/instagram.svg);
+}
+
+.our-team-contact-item:nth-child(2) {
+  background-image: url(../icon/twitter.svg);
+}
+
+.our-team-contact-item:nth-child(3) {
+  background-image: url(../icon/facebook.svg);
+}
+
+.our-team-contact-item:nth-child(4) {
+  background-image: url(../icon/linkedin.svg);
+}
+
+.our-team-contact-item:hover,
+.our-team-contact-item:focus {
+  background-color: var(--hover-color);
 }
 
 /* ------------OUR CUSTOMER------------- */
