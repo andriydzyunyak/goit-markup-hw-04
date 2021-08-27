@@ -563,7 +563,3 @@ ul {
   color: var(--main-text-color);
   margin-top: 4px;
 }
-
-.project-item-link:hover,
-.project-item-link:focus {
-}
